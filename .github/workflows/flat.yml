@@ -1,0 +1,27 @@
+name: Update data
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch: {}
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/flat.yml
+      - ./postprocess.ts
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup deno
+        uses: denoland/setup-deno@main
+        with:
+          deno-version: v1.x
+      - name: Check out repo
+        uses: actions/checkout@v2
+      - name: Fetch data
+        uses: githubocto/flat@v2
+        with:
+          http_url: https://creatinginterfaces.demo.52north.org/slupsk-tool/kindergartens.json
+          downloaded_filename: slupsk/data-raw/kindergartens.json
+          postprocess: ./postprocess.ts
