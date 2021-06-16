@@ -1,0 +1,55 @@
+---
+title: "Slupsk dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: bootstrap
+    logo: "img/logo_creating-interfaces_100x48.png"
+    favicon: img/favicon.ico
+    css: dashboard.css
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(wfenexus)
+
+# Load data
+kindergarten_df <- read_csv("data-raw/kindergartens.csv")
+
+
+
+```
+
+
+
+Overview
+=====================================
+
+
+
+Energy
+===================================== 
+
+We do not have any data regarding energy.
+
+
+About
+===================================== 
+
+#### About this dashboard
+
+
+An open source prototype for a visual interface to support research and Nexus engagements, designed collaborativelly as part of [Creating interfaces](https://creatinginterfaces.eifer.kit.edu/)' WP4, developed by the [Institute for Global Sustainable Development](https://warwick.ac.uk/fac/arts/schoolforcross-facultystudies/igsd) at the [University of Warwick](https://warwick.ac.uk/).
+
+![](img/IGSD_logo.jpg)
+
+
+#### Aim
+
+* What are the consequences of our choices?
+* Which small changes can we make in our food to make them more sustainable?
+
+#### Source Code
+
+* Source Code: https://github.com/IGSD-UoW/wfenexus
+* Licence: [GPL](https://github.com/IGSD-UoW/wfenexus/blob/main/LICENSE)
