@@ -1,0 +1,49 @@
+{
+    "count": 2,
+    "next": null,
+    "previous": null,
+    "page": 1,
+    "pages": 1,
+    "per_page": 50,
+    "multiple": false,
+    "list": [
+        {
+            "id": 22,
+            "name": "Przedszkole Miejskie nr 25 im. Kubusia Puchatka",
+            "address": "Powstańców Wielkopolskich 1, 76-200 Słupsk",
+            "phone": "514 830 863",
+            "email": "pm25slupsk@wp.pl",
+            "website": "http://www.puchatek.slupsk.pl",
+            "facebook": "https://www.facebook.com/Przedszkole-Miejskie-nr-25-Kubu%C5%9B-Puchatek-w-S%C5%82upsku-1910201105972534/",
+            "toggle": "interactive",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.982154250144962,
+                    54.45883598051801
+                ]
+            },
+            "latitude": 54.458702,
+            "longitude": 16.982329,
+            "accuracy": 150.0,
+            "label": "Przedszkole Miejskie nr 25 im. Kubusia Puchatka",
+            "toggle_label": "Wybierz punkt na mapie / Point on Map"
+        },
+        {
+            "id": 12,
+            "name": "Przedszkole Miejskie nr 12 Niezapominajka",
+            "address": "Sławieńska 2, 76-200 Słupsk",
+            "phone": "513 787 398",
+            "email": "pm12slupsk@wp.pl",
+            "website": "https://edu.slupsk.eu/placowki/514/",
+            "facebook": "http://www.facebook.com/PM12niezapominajka",
+            "toggle": "manual",
+            "geometry": null,
+            "latitude": 54.456091,
+            "longitude": 16.996595,
+            "accuracy": 150.0,
+            "label": "Przedszkole Miejskie nr 12 Niezapominajka",
+            "toggle_label": "Wprowadzić ręcznie / Enter Manually"
+        }
+    ]
+}
